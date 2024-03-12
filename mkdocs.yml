@@ -15,13 +15,21 @@ theme:
       info: octicons/info-16
   features:
     - navigation.footer
+    - content.footnote.tooltips
 nav:
   - Accueil: index.md
   - Installations et configurations:
     - Prise en main: configuration/prise_en_main.md
     - Hololens 2 sur Unity: configuration/developper_avec_unity.md
+    - Lancement du projet sur Hololens 2: configuration/lancement_projet.md
 markdown_extensions:
   - admonition
   - md_in_html
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
 extra_css:
   - stylesheets/extra.css
+repo_url: https://github.com/WashiFR/Hololens-Doc
+repo_name: WashiFR/Hololens-Doc

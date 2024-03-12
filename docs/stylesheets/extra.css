@@ -5,9 +5,9 @@ p > a:hover {
 }
 
 /* Barre de recherche */
-.md-search__input {
+.md-search__input,
+.md-search-result__meta {
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
 }
 
 /* Texte sous image */
