@@ -1,0 +1,38 @@
+/* Lien dans un texte */
+p > a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+/* Barre de recherche */
+.md-search__input,
+.md-search-result__meta {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Texte sous image */
+figcaption {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+
+[data-md-color-scheme=slate] {
+    --md-default-fg-color--light: white;
+    --md-typeset-color: white;
+}
+
+/* Admonition */
+.md-typeset .admonition,
+.md-typeset details {
+    border-width: 0;
+    border-left-width: 4px;
+    background-color: #22272e;
+    color: white;
+    font-size: .75rem;
+}
+
+/* Titres */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+    font-weight: bold;
+}
