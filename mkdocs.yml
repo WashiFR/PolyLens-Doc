@@ -1,0 +1,18 @@
+site_name: My Docs
+theme:
+  name: material
+  language: fr
+  palette:
+    scheme: slate
+    primary: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+nav:
+  - Accueil: index.md
+  - Créer un projet avec Hololens 2:
+    - Prise en main: makingProject/install.md
+markdown_extensions:
+  - admonition
+extra_css:
+  - stylesheets/extra.css
