@@ -4,14 +4,17 @@ theme:
   language: fr
   palette:
     scheme: slate
-    primary: indigo
+    primary: black
     toggle:
       icon: material/brightness-4
       name: Switch to light mode
   icon:
+    logo: material/hololens
     admonition:
       warning: octicons/alert-16
       info: octicons/info-16
+  features:
+    - navigation.footer
 nav:
   - Accueil: index.md
   - Installations et configurations:
