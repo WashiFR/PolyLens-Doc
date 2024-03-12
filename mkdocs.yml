@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Hololens 2
 theme:
   name: material
   language: fr
@@ -8,11 +8,17 @@ theme:
     toggle:
       icon: material/brightness-4
       name: Switch to light mode
+  icon:
+    admonition:
+      warning: octicons/alert-16
+      info: octicons/info-16
 nav:
   - Accueil: index.md
-  - Créer un projet avec Hololens 2:
-    - Prise en main: makingProject/install.md
+  - Installations et configurations:
+    - Prise en main: configuration/prise_en_main.md
+    - Hololens 2 sur Unity: configuration/developper_avec_unity.md
 markdown_extensions:
   - admonition
+  - md_in_html
 extra_css:
   - stylesheets/extra.css

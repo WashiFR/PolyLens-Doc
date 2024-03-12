@@ -1,6 +1,26 @@
+a:hover {
+    text-decoration: underline;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+[data-md-color-scheme=slate] {
+    --md-default-bg-color: #14171c;
+    --md-default-fg-color--light: white;
+    --md-typeset-color: white;
+}
+
 .md-typeset .admonition,
 .md-typeset details {
     border-width: 0;
     border-left-width: 4px;
-    /* background-color: aliceblue; */
+    background-color: #22272e;
+    color: white;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+    font-weight: bold;
 }

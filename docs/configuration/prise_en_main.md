@@ -1,5 +1,7 @@
 # Prise en main du casque HoloLens 2
 
+***
+
 ## Prérequis
 
 Pour pouvoir utiliser le casque de réalité mixte HoloLens 2, il vous faudra :
@@ -24,6 +26,14 @@ Une fois le casque sorti de sa boite, deux options s’offrent à vous. Vous pou
 
     Assurez-vous d’avoir une connexion Internet stable avant de démarrer votre HoloLens 2 pour la première fois.
 
-Une fois votre casque allumé suivez les étapes décrites sur le site de Microsoft : https://learn.microsoft.com/fr-fr/hololens/hololens2-start
+!!! info 
+
+    Une fois votre casque allumé suivez les étapes décrites sur le site de [Microsoft](https://learn.microsoft.com/fr-fr/hololens/hololens2-start).
 
 ## Premier démarrage et découverte des fonctionnalités du casque HoloLens 2
+
+Cette étape n’est pas obligatoire, mais reste très utile pour comprendre le fonctionnement du casque de réalité mixte. Nous allons dans cette étape installer le [MRTK Example Hub](https://learn.microsoft.com/fr-fr/windows/mixed-reality/mrtk-unity/mrtk2/running-examples-hub?view=mrtkunity-2022-05), qui va nous montrer les fonctionnalités de HoloLens 2 et les possibilités qu’il nous offre.  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hfWQrERtlEc?si=ej9M96Aa_rAFwgmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Dans la vidéo ci-dessus, vous pourrez voir une démonstration du logiciel MRTK Example Hub et des fonctionnalités réalisables.
