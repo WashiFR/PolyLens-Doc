@@ -18,9 +18,9 @@ theme:
     - content.footnote.tooltips
     - content.tooltips
 nav:
-  - Accueil: index.md
-  - Préréquis: prerequis.md
-  - Configurations:
+  - 📌 Accueil: index.md
+  - 📃 Préréquis: prerequis.md
+  - 🛠️ Configurations:
     - Prise en main: configuration/prise_en_main.md
     - Hololens 2 sur Unity: configuration/developper_avec_unity.md
     - Lancement du projet sur Hololens 2: configuration/lancement_projet.md
