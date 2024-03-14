@@ -1,5 +1,5 @@
 /* Lien dans un texte */
-p > a:hover {
+p > a:hover:not(.md-button) {
     opacity: 0.5;
     text-decoration: underline;
 }
@@ -53,6 +53,11 @@ figcaption {
     font-weight: bold;
 }
 
+/* Grid */
+.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
+    border-radius: 6px;
+}
+
 /* Footer */
 .md-footer__inner {
     gap: 20px;
@@ -104,4 +109,12 @@ figcaption {
 
 .md-footer__button {
     align-self: center;
+}
+
+/* Custom */
+.profil-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }

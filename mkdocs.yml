@@ -1,4 +1,4 @@
-site_name: Hololens 2
+site_name: Polytech Nancy - Hololens 2
 theme:
   name: material
   language: fr
@@ -19,15 +19,20 @@ theme:
     - content.tooltips
 nav:
   - Accueil: index.md
-  - Installations et configurations:
+  - Préréquis: prerequis.md
+  - Configurations:
     - Prise en main: configuration/prise_en_main.md
     - Hololens 2 sur Unity: configuration/developper_avec_unity.md
     - Lancement du projet sur Hololens 2: configuration/lancement_projet.md
+    - Vuforia: configuration/vuforia.md
 markdown_extensions:
   - admonition
   - md_in_html
   - footnotes
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - pymdownx.superfences
 extra_css:

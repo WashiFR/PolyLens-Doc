@@ -21,9 +21,11 @@ Le Mixed Reality Feature Tool, ou MRTK, est une librairie permettant aux dévelo
 
 !!! info
 
-    Vous pouvez suivre le guide [ici](https://learn.microsoft.com/fr-fr/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
+    [Suivez le guide](https://learn.microsoft.com/fr-fr/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk) officiel de Microsoft.
 
-    Mais n’allez pas plus loin que l’étape 4, car nous n’installons pas les mêmes librairies.
+!!! warning
+
+    N’allez pas plus loin que l’étape 4 de la section `Importer les packages Mixed Reality Toolkit et OpenXR`, car nous n’installons pas les mêmes librairies.
 
 Une fois les étapes précédentes réalisées, Il faut cocher plusieurs librairies. Dans `MRTK3`, cochez : `MRTK Input`, `MRTK Standard assets` et `MRTK UX Components`.
 
