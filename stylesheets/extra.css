@@ -118,3 +118,24 @@ figcaption {
     height: 50px;
     margin-right: 10px;
 }
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: hsla(var(--md-hue),15%,9%,1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
