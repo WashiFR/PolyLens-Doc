@@ -8,7 +8,7 @@ Pour pouvoir détecter nos machine grâce à la camera du casque HoloLens 2, il 
 
 ## Inscription et téléchargement du paquet Vuforia
 
-En premier lieu, il vous faudra un compte pour utiliser Vuforia. Pour créer un compte, rendez-vous sur [le site web de Vuforia](https://developer.vuforia.com/). Ensuite, cliquez sur `Sign-in`. Remplissez le formulaire et inscrivez-vous.
+En premier lieu, il vous faudra un compte pour utiliser Vuforia. Pour créer un compte, rendez-vous sur [le site web de Vuforia](https://developer.vuforia.com/). Ensuite, cliquez sur `Register`. Remplissez le formulaire et inscrivez-vous.
 
 <figure markdown="span">
     ![Image title](../img/login.png)
