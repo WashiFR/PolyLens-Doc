@@ -6,7 +6,7 @@ Maintenant que nous avons pris le casque de réalité mixte en mains, nous pouvo
 
 ## Création du projet Unity
 
-Nous allons en premier lieu créer un projet Unity. Il est important que la version d’Unity soit la **2021.3.35f1** afin d’éviter tout problème de compatibilité avec les packages MRTK. Il faut donc créer un projet 3D vierge. Le nom du projet importe peu.
+Nous allons en premier lieu créer un projet Unity. Il est important que la version d’Unity soit la **2022.3.21f1** afin d’éviter tout problème de compatibilité avec les packages MRTK. Il faut donc créer un projet 3D vierge. Le nom du projet importe peu.
 
 <figure markdown="span">
     ![Image title](../img/screen1.png)

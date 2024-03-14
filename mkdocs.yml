@@ -16,6 +16,7 @@ theme:
   features:
     - navigation.footer
     - content.footnote.tooltips
+    - content.tooltips
 nav:
   - Accueil: index.md
   - Installations et configurations:

@@ -39,6 +39,7 @@ Dans cette nouvlle fenêtre, il vous faudra renseigner l’adresse IP renseigné
 <figure markdown="span">![Image title](../img/screen9.png)</figure>
 
 Une fois toutes les étapes ci-dessus réalisées, vous pouvez lancer votre projet sur le casque de réalité mixte HoloLens 2. Si rien ne se passe vérifiez que :
+
 * Le casque et l’ordinateur sont connectés sur le même réseau WIFI
 * Le logiciel Holographic Remoting Player soit en cours d’exécution sur le casque
 
@@ -46,9 +47,4 @@ Une fois toutes les étapes ci-dessus réalisées, vous pouvez lancer votre proj
 
     Notez qu’il est possible que cela ne fonctionne pas sur certains réseaux publics ou universitaires.
 
-Annotation test (1) 
-{ .annotate }
-
-1. Test de l'annotation
-
-[^1]: il s’agit du débit maximum accordé
+[^1]: Débit maximum accordé
