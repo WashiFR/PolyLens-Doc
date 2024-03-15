@@ -5,6 +5,7 @@ theme:
   palette:
     scheme: slate
     primary: black
+    accent: deep purple
   icon:
     logo: material/hololens
     admonition:
@@ -23,8 +24,8 @@ nav:
   - 🛠️ Configurations:
     - Prise en main: configuration/prise_en_main.md
     - Hololens 2 sur Unity: configuration/developper_avec_unity.md
-    - Lancement du projet sur Hololens 2: configuration/lancement_projet.md
-    - Vuforia: configuration/vuforia.md
+    - Lancement du projet: configuration/lancement_projet.md
+    - Installer Vuforia: configuration/vuforia.md
   - 💻 Développement:
     - Objets manipulables: developpement/objets_manipulables.md
     - Interface utilisateur: developpement/interface_utilisateur.md
