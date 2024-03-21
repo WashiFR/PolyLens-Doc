@@ -82,6 +82,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ajout-dun-paquet-permettant-de-changer-la-langue-de-lapplication" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -588,6 +593,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Localisation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -598,6 +616,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-du-paquet-simple-localization-with-google-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation du paquet Simple Localization with Google Sheets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personnaliser-les-textes-en-fonction-de-la-langue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personnaliser les textes en fonction de la langue
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -649,6 +704,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-du-paquet-simple-localization-with-google-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation du paquet Simple Localization with Google Sheets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personnaliser-les-textes-en-fonction-de-la-langue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personnaliser les textes en fonction de la langue
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -666,9 +749,76 @@
   
 
 
-  <h1>Localisation</h1>
-
-
+<h1 id="ajout-dun-paquet-permettant-de-changer-la-langue-de-lapplication">Ajout d'un paquet permettant de changer la langue de l'application</h1>
+<hr />
+<h2 id="installation-du-paquet-simple-localization-with-google-sheets">Installation du paquet Simple Localization with Google Sheets</h2>
+<p>Pour commencer, ouvrez votre projet Unity si ce n'est pas déjà fait. Ensuite, ouvrez une page internet et collez le lien suivant : <a href="https://assetstore.unity.com/packages/tools/gui/simple-localization-with-google-sheets-120113">https://assetstore.unity.com/packages/tools/gui/simple-localization-with-google-sheets-120113</a></p>
+<p>Cliquez sur <code>Add to My Assets</code> </p>
+<figure>
+    <img alt="Image title" src="../../img/addAsset.png" />
+    <figcaption>Page du paquet de localisation</figcaption>
+</figure>
+<p>Pour continuer, vous devrez vous connecter à votre compte Unity. Une fois la connexion terminée, vous allez être redirigé à nouveau vers la page du paquet. Cliquez sur <code>Open in Unity</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/oiu.png" />
+    <figcaption>Page du paquet de localisation</figcaption>
+</figure>
+<p>Une fenêtre devrait s'ouvrir en haut de votre page vous demander d'autoriser l'accès à Unity. Cliquez sur <code>Ok</code>.
+De retour sur unity, une fenêtre nommée <strong>Package Manager</strong> a du s'ouvrir. Sélectionnez le bon paquet et cliquez sur <code>Download</code>.
+Une fois le paquet téléchargé, cliquez sur <code>Import</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/dil.png" />
+    <figcaption>Fenêtre du Package Manager</figcaption>
+</figure>
+<p>Une nouvelle fenêtre devrait également s'ouvrir avec les information du paquet. Cliquez à nouveau sur <code>import</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/importpk.png" />
+    <figcaption>Fenêtre d'import du paquet</figcaption>
+</figure>
+<p>Maintenant, vous pouvez vous rendre dans le dossier <code>SimpleLocalization</code>, puis ouvrir la scène <code>Example</code>. Si le paquet est importé correctement, l'exemple devrait fonctionner.</p>
+<figure>
+    <img alt="Image title" src="../../img/tryLoc.png" />
+    <figcaption>Chemin d'accès à la scène d'exemple.</figcaption>
+</figure>
+<h2 id="personnaliser-les-textes-en-fonction-de-la-langue">Personnaliser les textes en fonction de la langue</h2>
+<p>Maintenant que nous avons installé le paquet, nous pouvons passer à la personnalisation des textes que nous voulons traduire.
+Pour cela, il faut créer un document Google Sheets. Si vous ne savez pas utiliser Google Sheets, de l'aide est disponible <a href="https://support.google.com/docs/answer/6000292?hl=fr&amp;co=GENIE.Platform%3DDesktop">ici</a></p>
+<p>Dans le cadre de notre projet, nous utiliserons le document suivant : <a href="https://docs.google.com/spreadsheets/d/1xfL971gDXXS4rqXUoYytgwJEXiCeQBecHuoCRmkeasQ/edit#gid=0">Lien vers le document</a>.</p>
+<p>Comme vous pouvez le voir, il y a une certaine mise en forme à respecter. Dans la colonne A, il faut renseigner les clés qui nous servirons de références dans l'éditeur. Dans la ligne 1, vous devez renseigner Key en A1, puis les langues que vous voulez implémenter dans votre projet. </p>
+<figure>
+    <img alt="Image title" src="../../img/exLoc.png" />
+    <figcaption>Exemple de document valide.</figcaption>
+</figure>
+<p>Une fois que vous avez rempli le document avec les valeurs que vous souhaitez, cliquez sur <code>Partager</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/sharesheet.png" />
+    <figcaption>Page Google Sheets contenant le bouton partager</figcaption>
+</figure>
+<p>Ensuite, dans Accès général, cliquez sur <code>Limité</code> pour le remplacer par <code>Tous les utilisateurs qui ont le lien</code>. Passez ces utilisateurs en <code>Lecteur</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/access.png" />
+    <figcaption>Gestion des accès</figcaption>
+</figure>
+<p>Maintenant, il vous faut l'identifiant du document. Pour cela, récupérez la suite de caractères qui se situe entre d/ et /edit et copiez-la. </p>
+<figure>
+    <img alt="Image title" src="../../img/linkcpy.png" />
+    <figcaption>Partie du lien à copier</figcaption>
+</figure>
+<p>Retournez sur Unity. allez dans <code>Window &gt; Simple Localization &gt; Settings</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/slos.png" />
+    <figcaption>Option à sélectionner</figcaption>
+</figure>
+<p>Dans la fenêtre qui s'ouvre, collez votre Id dans <code>Table Id</code>, puis cliquez sur <code>Reseolve Sheets</code>. Enfin, après le chargement terminé, sur <code>Download Sheets</code>.</p>
+<figure>
+    <img alt="Image title" src="../../img/updCsv.png" />
+    <figcaption>Paramètres à rentrer</figcaption>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Guide d'installation vidéo :</p>
+<p><iframe width="100%" height="415" src="https://www.youtube.com/embed/m139Reb3hmQ?si=joLUBfh4QGVSE_zf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+</div>
 
 
 
