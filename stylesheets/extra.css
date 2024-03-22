@@ -57,7 +57,7 @@ p > a:hover:not(.md-button) {
     }
 
     .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
-        background-color: rgba(133, 163, 224, 0.1);
+        background-color: rgba(204, 133, 224, 0.1);
         border-radius: 4px;
         color: white;
     }
@@ -104,6 +104,15 @@ figcaption {
 /* Grid */
 .md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
     border-radius: 6px;
+}
+
+/* Foot Note */
+.md-typeset .footnote>ol>li {
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset .footnote>ol>li:target {
+    color: white;
 }
 
 /* Footer */
