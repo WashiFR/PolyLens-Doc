@@ -9,7 +9,7 @@ Maintenant que nous avons pris le casque de réalité mixte en mains, nous pouvo
 Nous allons en premier lieu créer un projet Unity. Il est important que la version d’Unity soit la <span style="color: red;">**2022.3.21f1**</span> afin d’éviter tout problème de compatibilité avec les packages MRTK. Il faut donc créer un projet 3D vierge. Le nom du projet importe peu.
 
 <figure markdown="span">
-    ![Image title](../img/screen1.png)
+    ![Image title](../assets/images/screen1.png)
     <figcaption>Création d'un projet 3D sur Unity</figcaption>
 </figure>
 
@@ -29,15 +29,15 @@ Le Mixed Reality Feature Tool, ou MRTK, est une librairie permettant aux dévelo
 
 Une fois les étapes précédentes réalisées, Il faut cocher plusieurs librairies. Dans `MRTK3`, cochez : `MRTK Input`, `MRTK Standard assets` et `MRTK UX Components`.
 
-<figure markdown="span">![Image title](../img/screen2.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen2.png)</figure>
 
 Dans `Platform Support`, sélectionnez `Mixed Reality OpenXR Plugin`.
 
-<figure markdown="span">![Image title](../img/screen3.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen3.png)</figure>
 
 Ensuite, cliquez sur `Get Features`. Patientez un moment pendant que le logiciel télécharge les données. Une fois le téléchargement terminé, le logiciel va afficher la page suivante :
 
-<figure markdown="span">![Image title](../img/screen4.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen4.png)</figure>
 
 Cliquez sur le bouton `Validate` pour vérifier la bonne installation des librairies. Un message s’ouvrira sur votre ordinateur vous indiquant le bon fonctionnement des nouvelles fonctionnalités. Cliquez sur `Ok`. Maintenant, cliquez sur le bouton `Import`, puis le bouton `Approve` et enfin, sur le bouton `Exit`. 
 
@@ -51,8 +51,8 @@ Il se peut que certaines interfaces n’apparaissent pas, notamment à <span sty
 
 Lors de l’ajout de la caméra dans le projet, il est possible que votre caméra ne soit pas correctement placer et vous ne voyez donc pas ce que vous avez ajouté dans votre scène, vérifier que la position en Y de `MRTK XR RIG` est à 0 et que son enfant `Camera Offset` à dans son composant `XR Origin` la partie `Camera Y Offset` à 0.
 
-<figure markdown="span">![Image title](../img/screen5.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen5.png)</figure>
 
-<figure markdown="span">![Image title](../img/screen6.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen6.png)</figure>
 
 Et voilà, votre projet et prêt, il ne reste plus qu’à pouvoir lancer votre projet sur votre casque Hololens 2 pour pouvoir le tester. Pour cela allez à la prochaine section où l’on vous montre comment lancer votre projet sur votre casque sans avoir besoin de build votre projet.

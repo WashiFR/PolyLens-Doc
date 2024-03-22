@@ -10,7 +10,7 @@ MRTK3 vous propose des UI déjà fait, ce qui est très pratique. Vous les trouv
 
     Les UI Canvas et Non-Canvas ne sont pas les mêmes, les UI Non-Canvas peuvent être utilisé directement en les mettant dans la scène, les UI Canvas ont besoin d'un composant parent `Canvas` pour fonctionner, ils sont utilisé pour la création de votre propre UI.
 
-<figure markdown="span">![Image title](../img/ui_mrtk_non_canvas.png)</figure>
+<figure markdown="span">![Image title](../assets/images/ui_mrtk_non_canvas.png)</figure>
 
 Il ne vous reste plus qu'à glisser l'élément que vous souhaitez utilisé sur votre scène pour pouvoir l'utiliser.
 

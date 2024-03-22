@@ -1,23 +1,27 @@
-# Polytech Nancy - Hololens 2
-
-<figure markdown="span">![Image title](img/logo.png)</figure>
+# <div align=center style="font-size: 100px">PolyLens</div>
 
 ***
 
-Cette documentation explique comment créer un projet avec Hololens et Unity à partir de 0.
+<figure markdown="span">![Image title](assets/images/logo.png)</figure>
+
+***
+
+Bienvenue dans la documentation officiel du logiciel <span style="color: red;">**PolyLens**</span>.
+
+Cette documentation présente et explique comment utiliser le logiciel PolyLens, mais aussi comment créer un projet avec Hololens[^1] et Unity[^2].
 
 ## Développeurs
 
 <div class="grid cards" markdown>
 
--   <img src="img/pp-loris.jpg" class=profil-pic align=center>**WEIER Loris**
+-   <img src="assets/images/pp-loris.jpg" class=profil-pic align=center>**WEIER Loris**
   
     --- 
 
     :simple-github: - [Github](https://github.com/WashiFR) <br>
     :simple-x: - [Twitter](https://twitter.com/Washi_fr)
 
--   <img src="img/pp-lenny.png" class=profil-pic align=center>**COLSON Lenny**
+-   <img src="assets/images/pp-lenny.png" class=profil-pic align=center>**COLSON Lenny**
 
     ---
 
@@ -25,3 +29,6 @@ Cette documentation explique comment créer un projet avec Hololens et Unity à 
     :simple-x: - [Twitter](https://twitter.com/OkilesDev)
 
 </div>
+
+[^1]: Paire de lunettes de réalité mixte permettant de simuler des hologrammes qui s’intègrent dans le champ de vision de l'utilisateur.
+[^2]: Moteur de jeu multiplateforme.

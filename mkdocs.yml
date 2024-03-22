@@ -1,13 +1,13 @@
-site_name: Polytech Nancy - Hololens 2
+site_name: PolyLens
 theme:
   name: material
   language: fr
+  logo: assets/images/hololens-icon-white.png
   palette:
     scheme: slate
     primary: black
     accent: deep purple
   icon:
-    logo: material/hololens
     admonition:
       warning: octicons/alert-16
       info: octicons/info-16
@@ -17,21 +17,26 @@ theme:
     - content.tooltips
 nav:
   - 📌 Accueil: index.md
-  - 📃 Préréquis:
-    - Télécharger Outils/Logiciels: prerequis/outils_logiciels.md
-    - Prise en main d'Unity: prerequis/unity.md
-    - Configurer Visual Studio: prerequis/visual_studio.md
-  - 🛠️ Configurations:
-    - Prise en main: configuration/prise_en_main.md
-    - Hololens 2 sur Unity: configuration/developper_avec_unity.md
-    - Lancement du projet: configuration/lancement_projet.md
-    - Installer Vuforia: configuration/vuforia.md
-  - 💻 Développement:
-    - Objets manipulables: developpement/objets_manipulables.md
-    - Interface utilisateur: developpement/interface_utilisateur.md
-    - Utiliser Vuforia: developpement/utiliser_vuforia.md
-    - Localisation: developpement/localisation.md
-    - Build le projet: developpement/build_projet.md
+  - 📚 Présentation PolyLens:
+    - Présentation: presentation/presentation.md
+    - Installation: presentation/installation.md
+    - Utilisation: presentation/utilisation.md
+  - 🛠️ Créer un projet:
+    - 📃 Prérequis:
+      - Télécharger les outils/logiciels: prerequis/outils_logiciels.md
+      - Prise en main d'Unity: prerequis/unity.md
+      - Configurer Visual Studio: prerequis/visual_studio.md
+    - ⚙️ Configurations:
+      - Prise en main du casque: configuration/prise_en_main.md
+      - Hololens avec Unity: configuration/developper_avec_unity.md
+      - Lancement du projet: configuration/lancement_projet.md
+      - Installer Vuforia: configuration/vuforia.md
+    - 💻 Développement:
+      - Objets manipulables: developpement/objets_manipulables.md
+      - Interface utilisateur: developpement/interface_utilisateur.md
+      - Utiliser Vuforia: developpement/utiliser_vuforia.md
+      - Localisation: developpement/localisation.md
+      - Build le projet: developpement/build_projet.md
 markdown_extensions:
   - admonition
   - md_in_html
@@ -45,4 +50,4 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 repo_url: https://github.com/WashiFR/Hololens-Doc
-repo_name: WashiFR/Hololens-Doc
+repo_name: WashiFR/PolyLens-Doc

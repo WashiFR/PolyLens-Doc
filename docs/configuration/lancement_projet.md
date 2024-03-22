@@ -16,7 +16,7 @@ Pour pouvoir tester notre projet Unity, plusieurs solutions sont disponibles :
 Le logiciel Holographic Remoting Player est très simple d’installation. Sur le casque, ouvrez l’application Microsoft Store, puis recherchez `Holographic Remoting Player`. Sélectionnez le logiciel montré ci-dessous et installez le.
 
 <figure markdown="span">
-    ![Image title](../img/screen7.png)
+    ![Image title](../assets/images/screen7.png)
     <figcaption>Logiciel Holographic Remoting Player</figcaption>
 </figure>
 
@@ -32,11 +32,11 @@ Si vous lancez le logiciel, vous verrez un message s’afficher qui indique que 
 
 Dans Unity, cliquez sur `Mixed Reality` en haut de l’éditeur, puis passez votre souris sur `Remoting` pour enfin cliquer sur `Holographic Remoting for Play Mode`. Une nouvelle fenêtre devrait s’ouvrir.
 
-<figure markdown="span">![Image title](../img/screen8.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen8.png)</figure>
 
 Dans cette nouvlle fenêtre, il vous faudra renseigner l’adresse IP renseignée par le casque dans le champ `Remote Host Name`. Vous pouvez changer d’autres paramètres tels que le port (ne pas changer) le Max Bitrate[^1], l’encodeur vidéo, une case pour activer l’audio et un sélecteur pour le mode de capture audio. Quand les paramètres vous conviennent, cliquez sur le bouton `Enable Holographic Remoting for Play Mode`.
 
-<figure markdown="span">![Image title](../img/screen9.png)</figure>
+<figure markdown="span">![Image title](../assets/images/screen9.png)</figure>
 
 Une fois toutes les étapes ci-dessus réalisées, vous pouvez lancer votre projet sur le casque de réalité mixte HoloLens 2. Si rien ne se passe vérifiez que :
 

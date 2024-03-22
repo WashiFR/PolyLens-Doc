@@ -9,14 +9,14 @@ Pour commencer, ouvrez votre projet Unity si ce n'est pas déjà fait. Ensuite, 
 Cliquez sur `Add to My Assets` 
 
 <figure markdown="span">
-    ![Image title](../img/addAsset.png)
+    ![Image title](../assets/images/addAsset.png)
     <figcaption>Page du paquet de localisation</figcaption>
 </figure>
 
 Pour continuer, vous devrez vous connecter à votre compte Unity. Une fois la connexion terminée, vous allez être redirigé à nouveau vers la page du paquet. Cliquez sur `Open in Unity`.
 
 <figure markdown="span">
-    ![Image title](../img/oiu.png)
+    ![Image title](../assets/images/oiu.png)
     <figcaption>Page du paquet de localisation</figcaption>
 </figure>
 
@@ -25,21 +25,21 @@ De retour sur unity, une fenêtre nommée **Package Manager** a du s'ouvrir. Sé
 Une fois le paquet téléchargé, cliquez sur `Import`.
 
 <figure markdown="span">
-    ![Image title](../img/dil.png)
+    ![Image title](../assets/images/dil.png)
     <figcaption>Fenêtre du Package Manager</figcaption>
 </figure>
 
 Une nouvelle fenêtre devrait également s'ouvrir avec les information du paquet. Cliquez à nouveau sur `import`.
 
 <figure markdown="span">
-    ![Image title](../img/importpk.png)
+    ![Image title](../assets/images/importpk.png)
     <figcaption>Fenêtre d'import du paquet</figcaption>
 </figure>
 
 Maintenant, vous pouvez vous rendre dans le dossier `SimpleLocalization`, puis ouvrir la scène `Example`. Si le paquet est importé correctement, l'exemple devrait fonctionner.
 
 <figure markdown="span">
-    ![Image title](../img/tryLoc.png)
+    ![Image title](../assets/images/tryLoc.png)
     <figcaption>Chemin d'accès à la scène d'exemple.</figcaption>
 </figure>
 
@@ -53,42 +53,42 @@ Dans le cadre de notre projet, nous utiliserons le document suivant : [Lien vers
 Comme vous pouvez le voir, il y a une certaine mise en forme à respecter. Dans la colonne A, il faut renseigner les clés qui nous servirons de références dans l'éditeur. Dans la ligne 1, vous devez renseigner Key en A1, puis les langues que vous voulez implémenter dans votre projet. 
 
 <figure markdown="span">
-    ![Image title](../img/exLoc.png)
+    ![Image title](../assets/images/exLoc.png)
     <figcaption>Exemple de document valide.</figcaption>
 </figure>
 
 Une fois que vous avez rempli le document avec les valeurs que vous souhaitez, cliquez sur `Partager`.
 
 <figure markdown="span">
-    ![Image title](../img/sharesheet.png)
+    ![Image title](../assets/images/sharesheet.png)
     <figcaption>Page Google Sheets contenant le bouton partager</figcaption>
 </figure>
 
 Ensuite, dans Accès général, cliquez sur `Limité` pour le remplacer par `Tous les utilisateurs qui ont le lien`. Passez ces utilisateurs en `Lecteur`.
 
 <figure markdown="span">
-    ![Image title](../img/access.png)
+    ![Image title](../assets/images/access.png)
     <figcaption>Gestion des accès</figcaption>
 </figure>
 
 Maintenant, il vous faut l'identifiant du document. Pour cela, récupérez la suite de caractères qui se situe entre d/ et /edit et copiez-la. 
 
 <figure markdown="span">
-    ![Image title](../img/linkcpy.png)
+    ![Image title](../assets/images/linkcpy.png)
     <figcaption>Partie du lien à copier</figcaption>
 </figure>
 
 Retournez sur Unity. allez dans `Window > Simple Localization > Settings`.
 
 <figure markdown="span">
-    ![Image title](../img/slos.png)
+    ![Image title](../assets/images/slos.png)
     <figcaption>Option à sélectionner</figcaption>
 </figure>
 
 Dans la fenêtre qui s'ouvre, collez votre Id dans `Table Id`, puis cliquez sur `Reseolve Sheets`. Enfin, après le chargement terminé, sur `Download Sheets`.
 
 <figure markdown="span">
-    ![Image title](../img/updCsv.png)
+    ![Image title](../assets/images/updCsv.png)
     <figcaption>Paramètres à rentrer</figcaption>
 </figure>
 
