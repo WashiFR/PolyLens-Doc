@@ -18,7 +18,7 @@
     
     
       
-        <title>Build le projet - PolyLens</title>
+        <title>Build et déployer le projet - PolyLens</title>
       
     
     
@@ -72,7 +72,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build le projet
+              Build et déployer le projet
             
           </span>
         </div>
@@ -757,15 +757,114 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Build et déployer le projet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Build le projet
+    Build et déployer le projet
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#activer-le-mode-developpeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activer le mode développeur
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activer le mode développeur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sur-hololens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sur HoloLens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sur-windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sur Windows 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sur-windows-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sur Windows 11
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-le-projet-sur-unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build le projet sur Unity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publier-le-projet-avec-visual-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publier le projet avec Visual Studio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployer-le-projet-sur-le-casque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déployer le projet sur le casque
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -807,6 +906,83 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#activer-le-mode-developpeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activer le mode développeur
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activer le mode développeur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sur-hololens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sur HoloLens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sur-windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sur Windows 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sur-windows-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sur Windows 11
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-le-projet-sur-unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build le projet sur Unity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publier-le-projet-avec-visual-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publier le projet avec Visual Studio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployer-le-projet-sur-le-casque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déployer le projet sur le casque
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -825,6 +1001,32 @@
 
 <h1 id="build-son-projet-et-le-deployer-sur-le-casque-hololens">Build son projet et le déployer sur le casque HoloLens</h1>
 <hr />
+<p>Build votre projet sur le casque HoloLens vous permet de le lancer directement sur le casque en tant qu'application, et cela permet aussi à votre projet d'accéder aux caméras du casque.</p>
+<h2 id="activer-le-mode-developpeur">Activer le mode développeur</h2>
+<h3 id="sur-hololens">Sur HoloLens</h3>
+<h3 id="sur-windows-10">Sur Windows 10</h3>
+<p>Rendez-vous dans les Paramètres, puis allez dans <code>Mise à jour et sécurité</code> &rarr; <code>Espace développeurs</code> et activez <code>Mode développeur</code>.</p>
+<h3 id="sur-windows-11">Sur Windows 11</h3>
+<p>Rendez-vous dans les Paramètres, puis allez dans <code>Système</code> &rarr; <code>Espace développeurs</code> et activez <code>Mode développeur</code>.</p>
+<h2 id="build-le-projet-sur-unity">Build le projet sur Unity</h2>
+<p>Pour build votre projet avec Unity, allez dans <code>File</code> &rarr; <code>Build settings...</code>, vous pouvez y accéder vie le raccourcis <code>Ctrl + Shift + B</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Pensez à ajouter vos scène en appuyant sur le bouton <code>Add Open Scenes</code> en étant sur la scène que vous voulez ajouter.</p>
+</div>
+<figure>
+    <img alt="Image title" src="../../assets/images/developpement/unity-build.png" />
+    <figcaption>Build du projet sur Unity</figcaption>
+</figure>
+<p>Si vous n'êtes pas déjà sur la bonne plateforme, choisisez la plateforme <code>Universal Windows Platefrom</code> et cliquez sur <code>Switch platefrom</code>. Une fois fait, mettez les mêmes paramètres que sur l'image. Une fois tout cela fait, vous pouvez build le projet en appuyant sur le bouton <code>Build</code></p>
+<h2 id="publier-le-projet-avec-visual-studio">Publier le projet avec Visual Studio</h2>
+<p>Une fois votre build finis, ouvrez le fichier <code>[NomDeVotreProjet].sln</code> avec Visual Studio. Sur la droite de votre fenêtre Visual Studio, faites un clique droit sur <code>[NomDeVotreProjet] (Universal Windows)</code> et cliquez sur <code>Publier</code> &rarr; <code>Créer des packages d'applications...</code></p>
+<figure><img alt="Image title" src="../../assets/images/developpement/vs-fenetre.png" /></figure>
+<figure><img alt="Image title" src="../../assets/images/developpement/publier-projet.png" /></figure>
+<p>Vous aurez une nouvelle fenêtre qui souvrira, les 2 premières étapes il n'y a rien à modifier, mais pour la dernière, mettez les mêmes modifications que sur l'image ci-dessous :</p>
+<figure><img alt="Image title" src="../../assets/images/developpement/param-vs.png" /></figure>
+<p>Une fois cela fait, appuyez sur <code>Créer</code>, cela va vous créer des fichiers permettants de déployer votre projet sur le casque HoloLens.</p>
+<h2 id="deployer-le-projet-sur-le-casque">Déployer le projet sur le casque</h2>
 
 
 

@@ -74,7 +74,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -821,7 +821,7 @@
         
   
   <span class="md-ellipsis">
-    Build le projet
+    Build et déployer le projet
   </span>
   
 
@@ -923,7 +923,7 @@
 <h2 id="creation-du-projet-unity">Création du projet Unity</h2>
 <p>Nous allons en premier lieu créer un projet Unity. Il est important que la version d’Unity soit la <span style="color: red;"><strong>2022.3.21f1</strong></span> afin d’éviter tout problème de compatibilité avec les packages MRTK. Il faut donc créer un projet 3D vierge. Le nom du projet importe peu.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/screen1.png" />
+    <img alt="Image title" src="../../assets/images/configuration/screen1.png" />
     <figcaption>Création d'un projet 3D sur Unity</figcaption>
 </figure>
 <p>Une fois notre projet Unity créé, Nous allons nous diriger vers <code>File</code> &rarr; <code>Build Settings</code>, puis changer la plateforme pour <code>Universal Windows Platform</code>. Ensuite, nous pouvons fermer l’éditeur et passer à l’installation du <strong>Mixed Reality Feature Tool (MRTK)</strong>.</p>
@@ -938,11 +938,11 @@
 <p>N’allez pas plus loin que l’étape 4 de la section <code>Importer les packages Mixed Reality Toolkit et OpenXR</code>, car nous n’installons pas les mêmes librairies.</p>
 </div>
 <p>Une fois les étapes précédentes réalisées, Il faut cocher plusieurs librairies. Dans <code>MRTK3</code>, cochez : <code>MRTK Input</code>, <code>MRTK Standard assets</code> et <code>MRTK UX Components</code>.</p>
-<figure><img alt="Image title" src="../../assets/images/screen2.png" /></figure>
+<figure><img alt="Image title" src="../../assets/images/configuration/screen2.png" /></figure>
 <p>Dans <code>Platform Support</code>, sélectionnez <code>Mixed Reality OpenXR Plugin</code>.</p>
-<figure><img alt="Image title" src="../../assets/images/screen3.png" /></figure>
+<figure><img alt="Image title" src="../../assets/images/configuration/screen3.png" /></figure>
 <p>Ensuite, cliquez sur <code>Get Features</code>. Patientez un moment pendant que le logiciel télécharge les données. Une fois le téléchargement terminé, le logiciel va afficher la page suivante :</p>
-<figure><img alt="Image title" src="../../assets/images/screen4.png" /></figure>
+<figure><img alt="Image title" src="../../assets/images/configuration/screen4.png" /></figure>
 <p>Cliquez sur le bouton <code>Validate</code> pour vérifier la bonne installation des librairies. Un message s’ouvrira sur votre ordinateur vous indiquant le bon fonctionnement des nouvelles fonctionnalités. Cliquez sur <code>Ok</code>. Maintenant, cliquez sur le bouton <code>Import</code>, puis le bouton <code>Approve</code> et enfin, sur le bouton <code>Exit</code>. </p>
 <h2 id="configuration-du-projet-unity">Configuration du projet Unity</h2>
 <p>Une fois l’outil d’installation fermé, vous pouvez retourner sur votre projet Unity. Ensuite, suivez les indications de la vidéo pour configurer votre projet Unity.</p>
@@ -950,8 +950,8 @@
 
 <p>Il se peut que certaines interfaces n’apparaissent pas, notamment à <span style="color: rgb(78, 170, 200)"><strong>21:50</strong></span>, il suffit juste d’aller dans <code>Edit</code> &rarr; <code>Project Settings</code> &rarr; <code>XR Plug-in Management</code> (tout en bas à gauche) pour avoir la même fenêtre. </p>
 <p>Lors de l’ajout de la caméra dans le projet, il est possible que votre caméra ne soit pas correctement placer et vous ne voyez donc pas ce que vous avez ajouté dans votre scène, vérifier que la position en Y de <code>MRTK XR RIG</code> est à 0 et que son enfant <code>Camera Offset</code> à dans son composant <code>XR Origin</code> la partie <code>Camera Y Offset</code> à 0.</p>
-<figure><img alt="Image title" src="../../assets/images/screen5.png" /></figure>
-<figure><img alt="Image title" src="../../assets/images/screen6.png" /></figure>
+<figure><img alt="Image title" src="../../assets/images/configuration/screen5.png" /></figure>
+<figure><img alt="Image title" src="../../assets/images/configuration/screen6.png" /></figure>
 <p>Et voilà, votre projet et prêt, il ne reste plus qu’à pouvoir lancer votre projet sur votre casque Hololens 2 pour pouvoir le tester. Pour cela allez à la prochaine section où l’on vous montre comment lancer votre projet sur votre casque sans avoir besoin de build votre projet.</p>
 
 

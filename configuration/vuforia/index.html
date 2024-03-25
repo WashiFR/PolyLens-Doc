@@ -74,7 +74,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -821,7 +821,7 @@
         
   
   <span class="md-ellipsis">
-    Build le projet
+    Build et déployer le projet
   </span>
   
 
@@ -924,13 +924,13 @@
 <h2 id="inscription-et-telechargement-du-paquet-vuforia">Inscription et téléchargement du paquet Vuforia</h2>
 <p>En premier lieu, il vous faudra un compte pour utiliser Vuforia. Pour créer un compte, rendez-vous sur <a href="https://developer.vuforia.com/">le site web de Vuforia</a>. Ensuite, cliquez sur <code>Register</code>. Remplissez le formulaire et inscrivez-vous.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/login.png" />
+    <img alt="Image title" src="../../assets/images/configuration/login.png" />
     <figcaption>Page d'accueil de Vuforia</figcaption>
 </figure>
 <p>Un fois votre compte créé, connectez-vous et cliquez sur l'onglet <code>Downloads</code>. Ensuite, cliquez sur 
 <code>Add Vuforia Engine to a Unity Project or upgrade to the latest version</code>. Enregistrez le fichier.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/DownloadVuforia.png" />
+    <img alt="Image title" src="../../assets/images/configuration/DownloadVuforia.png" />
     <figcaption>Page de téléchargement de Vuforia</figcaption>
 </figure>
 <p>Un fois le paquet téléchargé, glissez-le dans votre projet Unity. Une fenêtre devrait s'ouvrir. Cliquez sur le bouton <code>Import</code>.</p>
@@ -938,7 +938,7 @@
 <p>Une fois que Vuforia est installé sur le moteur, il reste quelques étapes. La première étape est d'installer le script de Vuforia sur notre caméra MR.</p>
 <p>Pour faire cela, développez le <code>MRTK XR Rig</code>, puis développez <code>Camera Offset</code>. Enfin sélectionnez <code>Main Camera</code>.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/selectCamera.png" />
+    <img alt="Image title" src="../../assets/images/configuration/selectCamera.png" />
     <figcaption>Zoom sur l'éditeur Unity</figcaption>
 </figure>
 <p>Dans les composants de la caméra, ajoutez les scripts suivants :</p>
@@ -947,28 +947,28 @@
 <li>Default initialization Error Handler</li>
 </ul>
 <figure>
-    <img alt="Image title" src="../../assets/images/addingScripts.png" />
+    <img alt="Image title" src="../../assets/images/configuration/addingScripts.png" />
     <figcaption>Scripts à ajouter à la caméra</figcaption>
 </figure>
 <p>Maintenant que vous avez ajouté ces scripts à votre caméra, retournez sur la page web de Vuforia.
 Cliquez sur <code>My Account</code>, puis sur <code>Licenses</code>, et enfin sur <code>Get Basic</code>.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/getLicenseKey1.png" />
+    <img alt="Image title" src="../../assets/images/configuration/getLicenseKey1.png" />
     <figcaption>Page de License de Vuforia</figcaption>
 </figure>
 <p>Ensuite, donnez un nom à votre license Vuforia. Après avoir lu le contrat de développeur Vuforia et avoir accepté les conditions, cliquez sur <code>Confirm</code>.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/createLicense.png" />
+    <img alt="Image title" src="../../assets/images/configuration/createLicense.png" />
     <figcaption>Page de création de license de Vuforia</figcaption>
 </figure>
 <p>Une fois votre license créée, le site vous redirigera sur la page <code>Licenses</code> de Vuforia. Faites un double-clique sur le nom de la license que vous venez de créer et copiez la clé de license.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/copykey.png" />
+    <img alt="Image title" src="../../assets/images/configuration/copykey.png" />
     <figcaption>Page contenant la clé de license</figcaption>
 </figure>
 <p>Une fois votre clé copiée, retournez sur Unity. Dans le script Vuforia Behavior qui est dans votre caméra, cliquez sur <code>Open Vuforia Engine Configuration</code>. Dans l'inspecteur, cherchez une boite avec <code>App License Key</code>. Collez votre clé dans cette boîte.</p>
 <figure>
-    <img alt="Image title" src="../../assets/images/EnterKeyInUnity.png" />
+    <img alt="Image title" src="../../assets/images/configuration/EnterKeyInUnity.png" />
     <figcaption>Instructions à suivre pour insérer la clé de license</figcaption>
 </figure>
 <div class="admonition info">
