@@ -6,7 +6,7 @@ theme:
   palette:
     scheme: slate
     primary: black
-    accent: deep purple
+    accent: cyan
   icon:
     admonition:
       warning: octicons/alert-16
@@ -36,7 +36,7 @@ nav:
       - Interface utilisateur: developpement/interface_utilisateur.md
       - Utiliser Vuforia: developpement/utiliser_vuforia.md
       - Localisation: developpement/localisation.md
-      - Build le projet: developpement/build_projet.md
+      - Build et déployer le projet: developpement/build_projet.md
 markdown_extensions:
   - admonition
   - md_in_html
