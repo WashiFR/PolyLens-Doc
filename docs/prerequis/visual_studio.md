@@ -12,6 +12,6 @@ Pour pouvoir programmer et déployer nos applications avec Visual Studio[^1] nou
 * Connectivité de périphérique USB (requise pour le déploiement/débogage vers HoloLens via USB)
 * C++ (v142) Outils de la plateforme Windows universelle (requis lors de l’utilisation d’Unity)
 
-<figure markdown="span">![Image title](../assets/images/vs-config.png)</figure>
+<figure markdown="span">![Image title](../assets/images/prerequis/vs-config.png)</figure>
 
 [^1]: Ensemble complet d'outils de développement permettant de générer des applications web ASP.NET, des services web XML, des applications bureautiques et des applications mobiles.

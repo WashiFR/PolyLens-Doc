@@ -25,7 +25,7 @@ Pour build votre projet avec Unity, allez dans `File` &rarr; `Build settings...`
     Pensez à ajouter vos scène en appuyant sur le bouton `Add Open Scenes` en étant sur la scène que vous voulez ajouter.
 
 <figure markdown="span">
-    ![Image title](../assets/images/unity-build.png)
+    ![Image title](../assets/images/developpement/unity-build.png)
     <figcaption>Build du projet sur Unity</figcaption>
 </figure>
 
@@ -35,13 +35,13 @@ Si vous n'êtes pas déjà sur la bonne plateforme, choisisez la plateforme `Uni
 
 Une fois votre build finis, ouvrez le fichier `[NomDeVotreProjet].sln` avec Visual Studio. Sur la droite de votre fenêtre Visual Studio, faites un clique droit sur `[NomDeVotreProjet] (Universal Windows)` et cliquez sur `Publier` &rarr; `Créer des packages d'applications...`
 
-<figure markdown="span">![Image title](../assets/images/vs-fenetre.png)</figure>
+<figure markdown="span">![Image title](../assets/images/developpement/vs-fenetre.png)</figure>
 
-<figure markdown="span">![Image title](../assets/images/publier-projet.png)</figure>
+<figure markdown="span">![Image title](../assets/images/developpement/publier-projet.png)</figure>
 
 Vous aurez une nouvelle fenêtre qui souvrira, les 2 premières étapes il n'y a rien à modifier, mais pour la dernière, mettez les mêmes modifications que sur l'image ci-dessous :
 
-<figure markdown="span">![Image title](../assets/images/param-vs.png)</figure>
+<figure markdown="span">![Image title](../assets/images/developpement/param-vs.png)</figure>
 
 Une fois cela fait, appuyez sur `Créer`, cela va vous créer des fichiers permettants de déployer votre projet sur le casque HoloLens.
 
