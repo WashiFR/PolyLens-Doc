@@ -85,12 +85,172 @@ Retournez sur Unity. allez dans `Window > Simple Localization > Settings`.
     <figcaption>Option à sélectionner</figcaption>
 </figure>
 
-Dans la fenêtre qui s'ouvre, collez votre Id dans `Table Id`, puis cliquez sur `Reseolve Sheets`. Enfin, après le chargement terminé, sur `Download Sheets`.
+Dans la fenêtre qui s'ouvre, collez votre Id dans `Table Id`, puis cliquez sur `Resolve Sheets`. Enfin, après le chargement terminé, sur `Download Sheets`.
 
 <figure markdown="span">
     ![Image title](../assets/images/developpement/updCsv.png)
     <figcaption>Paramètres à rentrer</figcaption>
 </figure>
+
+Maintenant, Nous allons ajouter un script `LocalizedTextTMP` pour pouvoir cha,ger le TextMeshPro de manière dynamique. Pour cela, allez dans `Assets > SimpleLocalization > Scripts`, créez un nouveau script `LocalizedTextTMP.cs` et copiez le code suivant :
+
+```C#
+using TMPro;
+using UnityEngine;
+
+namespace Assets.SimpleLocalization.Scripts
+{
+    /// <summary>
+    /// Localize text component.
+    /// </summary>
+    [RequireComponent(typeof(TMP_Text))]
+    public class LocalizedTextTMP : MonoBehaviour
+    {
+        public string LocalizationKey;
+
+        public void Start()
+        {
+            Localize();
+            LocalizationManager.OnLocalizationChanged += Localize;
+        }
+
+        public void OnDestroy()
+        {
+            LocalizationManager.OnLocalizationChanged -= Localize;
+        }
+
+        public void Localize()
+        {
+            TMP_Text textMesh = GetComponent<TMP_Text>();
+            switch (LocalizationManager.Language)
+            {
+                case "Chinese":
+                    textMesh.font = MultiLangageManager.instance.chineseFont;
+                    break;
+                case "Japanese":
+                    textMesh.font = MultiLangageManager.instance.japaneseFont;
+                    break;
+                case "Arabic":
+                    textMesh.font = MultiLangageManager.instance.arabicFont;
+                    break;
+                default:
+                    textMesh.font = MultiLangageManager.instance.defaultFont;
+                    break;
+            }
+            textMesh.text = LocalizationManager.Localize(LocalizationKey);
+            
+        }
+    }
+}
+```
+
+Il faut ensuite implémenter la localisation à notre scène. Dans notre cas, on utilisera la scène `Hub` pour changer la langue.
+
+Dans le dossier `Assets > Scripts`, créez un nouveau script. Nommez-le comme vous voulez mais notez qu'il s'agit d'un manager.
+
+Par exemple, le code de notre Manager ressemble à ceci :
+
+```c#
+using Assets.SimpleLocalization.Scripts;
+using TMPro;
+using UnityEngine;
+
+public class MultiLangageManager : MonoBehaviour
+{
+    // On importe les différentes polices d'écriture
+    public TMP_FontAsset defaultFont;
+    public TMP_FontAsset japaneseFont;
+    public TMP_FontAsset arabicFont;
+    public TMP_FontAsset chineseFont;
+
+    // On crée une instance de MultiLangageManager
+    public static MultiLangageManager instance;
+    public void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
+        // On récupère la langue du système
+        LocalizationManager.Read();
+        
+        
+        // On change la langue en fonction de la langue du système
+        switch (Application.systemLanguage)
+        {
+            case SystemLanguage.German:
+                LocalizationManager.Language = "German";
+                break;
+            case SystemLanguage.Japanese:
+                LocalizationManager.Language = "Japanese";
+                break;
+            case SystemLanguage.French:
+                LocalizationManager.Language = "French";
+                break;
+            case SystemLanguage.Spanish:
+                LocalizationManager.Language = "Spanish";
+                break;
+            case SystemLanguage.Arabic:
+                LocalizationManager.Language = "Arabic";
+                break;
+            case SystemLanguage.Chinese:
+                LocalizationManager.Language = "Chinese";
+                break;
+            case SystemLanguage.Italian:
+                LocalizationManager.Language = "Italian";
+                break;
+            case SystemLanguage.Ukrainian:
+                LocalizationManager.Language = "Ukrainian";
+                break;
+            case SystemLanguage.English:
+                LocalizationManager.Language = "English";
+                break;
+            default:
+                // Si la langue du système n'est pas reconnue, on met la langue en anglais
+                LocalizationManager.Language = "English";
+                break;
+        }
+        
+    }
+    
+    // On crée une fonction pour changer la langue
+    public void SetLocalization(string localization)
+    {
+        LocalizationManager.Language = localization;
+    }
+}
+```
+
+Créez un objet vide sur votre scène, et ajoutez-lui le script que vous venez de créer. Vous devrez renseigner les polices pour les différent langages. Dans notre projet, nous gérons 4 polices : Alphabet latin et cyrillique, Japonais, Chinois et Arabe.
+
+Maintenant que tout est presque fonctionnel, il suffit d'ajouter un nouvel objet vide, lui ajouter le composant `TextMeshPro` et le script `LocalizedTextTMP`. Dans LocalizedTextTMP, rentrez la clé correspondante à celle du document Google Sheets.
+
+<figure markdown="span">
+    ![Image title](../assets/images/developpement/languageKey.png)
+    <figcaption>Clé a récupérer</figcaption>
+</figure>
+
+<figure markdown="span">
+    ![Image title](../assets/images/developpement/ltmp.png)
+    <figcaption>Clé a rentrer dans le composant</figcaption>
+</figure>
+
+Une fois toutes les étapes précédentes réalisées, le texte de vore TextMeshPro doit afficher le texte correspondant à la clé donnée et au langage de votre système.
+
+## Changer la langue
+
+Il est possible que l'utilisateur souhaite une langue qui n'est pas celle de son système. Dans ce cas, vous pouvez créer des bouttons, ou des EventHandler pour modifier la langue. Dans le cadre de notre projet, nous avons ajouté des boutons avec le drapeau des pays correspondants. Dans les évènements, quand on clique sur le bouton, on appelle la fonction `SetLocalization` de notre Manager et nous renseignons la langue souhaitée.
+
+<figure markdown="span">
+    ![Image title](../assets/images/developpement/changeLangage.png)
+    <figcaption>Appel à la fonction quand on clique sur un bouton</figcaption>
+</figure>
+
 
 !!!info
 
