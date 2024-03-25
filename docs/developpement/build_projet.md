@@ -1,5 +1,9 @@
 # Build son projet et le déployer sur le casque HoloLens
 
+<div class="temp-card">
+    Cette partie est en cours d'écriture
+</div>
+
 ***
 
 Build votre projet sur le casque HoloLens vous permet de le lancer directement sur le casque en tant qu'application, et cela permet aussi à votre projet d'accéder aux caméras du casque.
@@ -18,7 +22,7 @@ Rendez-vous dans les Paramètres, puis allez dans `Système` &rarr; `Espace dév
 
 ## Build le projet sur Unity
 
-Pour build votre projet avec Unity, allez dans `File` &rarr; `Build settings...`, vous pouvez y accéder vie le raccourcis `Ctrl + Shift + B`.
+Pour build votre projet avec Unity, allez dans `File` &rarr; `Build settings...`, vous pouvez y accéder vie le raccourcis ++ctrl+shift+b++
 
 !!! warning "Important"
 

@@ -12,19 +12,19 @@ Pour développer des applications en réalité mixte[^1], vous aurez besoins d'i
   
     --- 
 
-    [Télécharger](https://unity.com/fr/download){.md-button}
+    [:octicons-download-16: Télécharger](https://unity.com/fr/download){.md-button}
 
 -   :simple-visualstudio: **Visual Studio**
 
     ---
 
-    [Télécharger](https://visualstudio.microsoft.com/fr/downloads/){.md-button}
+    [:octicons-download-16: Télécharger](https://visualstudio.microsoft.com/fr/downloads/){.md-button}
 
 -   :material-mixed-reality: **MRTK**
 
     ---
 
-    [Télécharger](https://www.microsoft.com/en-us/download/details.aspx?id=102778){.md-button}
+    [:octicons-download-16: Télécharger](https://www.microsoft.com/en-us/download/details.aspx?id=102778){.md-button}
 
 </div>
 
