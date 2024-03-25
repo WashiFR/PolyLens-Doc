@@ -49,5 +49,5 @@ markdown_extensions:
   - pymdownx.superfences
 extra_css:
   - stylesheets/extra.css
-repo_url: https://github.com/WashiFR/Hololens-Doc
+repo_url: https://github.com/WashiFR/PolyLens-Doc
 repo_name: WashiFR/PolyLens-Doc
