@@ -921,23 +921,23 @@
 <hr />
 <p>Maintenant que nous avons pris le casque de réalité mixte en mains, nous pouvons commencer à préparer notre environnement de développement.</p>
 <h2 id="creation-du-projet-unity">Création du projet Unity</h2>
-<p>Nous allons en premier lieu créer un projet Unity. Il est important que la version d’Unity soit la <span style="color: red;"><strong>2022.3.21f1</strong></span> afin d’éviter tout problème de compatibilité avec les packages MRTK. Il faut donc créer un projet 3D vierge. Le nom du projet importe peu.</p>
+<p>Nous allons en premier lieu créer un projet Unity. Il est important que la version d’Unity soit la <span style="color: red;"><strong>2022.3.21f1</strong></span> ou supérieur afin d’éviter tout problème de compatibilité avec les packages MRTK. Il faut donc créer un projet 3D vierge. Le nom du projet importe peu.</p>
 <figure>
     <img alt="Image title" src="../../assets/images/configuration/screen1.png" />
     <figcaption>Création d'un projet 3D sur Unity</figcaption>
 </figure>
 <p>Une fois notre projet Unity créé, Nous allons nous diriger vers <code>File</code> &rarr; <code>Build Settings</code>, puis changer la plateforme pour <code>Universal Windows Platform</code>. Ensuite, nous pouvons fermer l’éditeur et passer à l’installation du <strong>Mixed Reality Feature Tool (MRTK)</strong>.</p>
 <h2 id="mixed-reality-feature-tool">Mixed Reality Feature Tool</h2>
-<p>Le Mixed Reality Feature Tool, ou MRTK, est une librairie permettant aux développeurs de programmer plus facilement leurs applications pour les casques de réalité mixte. Il est disponible pour Unreal et Unity. Dans notre cas, nous utiliserons Unity. </p>
+<p>Le Mixed Reality Feature Tool, ou MRTK, est une librairie permettant aux développeurs de programmer plus facilement leurs applications pour les casques de réalité mixte. Il est disponible pour Unreal<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> et Unity. Dans notre cas, nous utiliserons Unity. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><a href="https://learn.microsoft.com/fr-fr/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk">Suivez le guide</a> officiel de Microsoft.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>N’allez pas plus loin que l’étape 4 de la section <code>Importer les packages Mixed Reality Toolkit et OpenXR</code>, car nous n’installons pas les mêmes librairies.</p>
+<p>N’allez pas plus loin que l’étape 4 de la section <code>Importer les packages Mixed Reality Toolkit et OpenXR</code>, car nous n’installerons pas les mêmes librairies.</p>
 </div>
-<p>Une fois les étapes précédentes réalisées, Il faut cocher plusieurs librairies. Dans <code>MRTK3</code>, cochez : <code>MRTK Input</code>, <code>MRTK Standard assets</code> et <code>MRTK UX Components</code>.</p>
+<p>Une fois les étapes précédentes réalisées, Il faut cocher plusieurs librairies. Dans <code>MRTK3</code>, cochez les cases suivantes : <code>MRTK Input</code>, <code>MRTK Standard assets</code> et <code>MRTK UX Components</code>.</p>
 <figure><img alt="Image title" src="../../assets/images/configuration/screen2.png" /></figure>
 <p>Dans <code>Platform Support</code>, sélectionnez <code>Mixed Reality OpenXR Plugin</code>.</p>
 <figure><img alt="Image title" src="../../assets/images/configuration/screen3.png" /></figure>
@@ -953,6 +953,14 @@
 <figure><img alt="Image title" src="../../assets/images/configuration/screen5.png" /></figure>
 <figure><img alt="Image title" src="../../assets/images/configuration/screen6.png" /></figure>
 <p>Et voilà, votre projet et prêt, il ne reste plus qu’à pouvoir lancer votre projet sur votre casque Hololens 2 pour pouvoir le tester. Pour cela allez à la prochaine section où l’on vous montre comment lancer votre projet sur votre casque sans avoir besoin de build votre projet.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Moteur de jeu vidéo propriétaire développé par Epic Games.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
