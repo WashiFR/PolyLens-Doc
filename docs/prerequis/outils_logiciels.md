@@ -2,7 +2,7 @@
 
 ***
 
-Pour développer des applications en réalité mixte[^1], vous aurez besoins d'installer certains outils et logiciels.
+Pour développer des applications en réalité mixte, vous aurez besoins d'installer certains outils et logiciels.
 
 ## Installations des outils/logiciels
 
@@ -14,13 +14,13 @@ Pour développer des applications en réalité mixte[^1], vous aurez besoins d'i
 
     [:octicons-download-16: Télécharger](https://unity.com/fr/download){.md-button}
 
--   :simple-visualstudio: **Visual Studio**
+-   :simple-visualstudio: **Visual Studio**[^1]
 
     ---
 
     [:octicons-download-16: Télécharger](https://visualstudio.microsoft.com/fr/downloads/){.md-button}
 
--   :material-mixed-reality: **MRTK**
+-   :material-mixed-reality: **MRTK**[^2]
 
     ---
 
@@ -32,4 +32,5 @@ Pour développer des applications en réalité mixte[^1], vous aurez besoins d'i
 
 <iframe width="100%" height="415" src="https://www.youtube.com/embed/Kh_FD0Ypdhg?si=fk7U0Rh-yrGGkOnD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-[^1]: Fusion de mondes réels et virtuels pour produire de nouveaux environnements et visualisations, où les objets physiques et numériques coexistent et interagissent en temps réel.
+[^1]: Ensemble complet d'outils de développement permettant de générer des applications web ASP.NET, des services web XML, des applications bureautiques et des applications mobiles.
+[^2]: Mixed Reality Toolkit (MRTK) est un kit de développement logiciel  open-source développé par Microsoft en 2016 pour le développement d'applications logicielles de réalité mixte (MR) et de réalité augmentée (AR).
